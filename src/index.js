@@ -43,5 +43,27 @@ function handlegalacticAgeCalcForm() {
 }
 
 window.addEventListener("load", function() {
+  let form = document.querySelector("#galacticAgeCalculator-form");
+  let submitBtn = document.getElementById("submitBtn");
+  let resetBtn = document.getElementById("resetBtn");
+
   document.querySelector("#galacticAgeCalculator-form").addEventListener("submit", handlegalacticAgeCalcForm);
+
+  submitBtn.removeAttribute("hidden");
+  
+  form.addEventListener("submit", function() {
+    submitBtn.setAttribute("hidden","hidden");
+    resetBtn.removeAttribute("class");
+  });
+
+  resetBtn.addEventListener("click", function() {
+    submitBtn.removeAttribute("hidden");
+    document.querySelector('#response').innerText = null;
+    document.querySelector('#response2').innerText = null;
+    document.querySelector('#response3').innerText = null;
+    document.querySelector('#response4').innerText = null;
+    document.querySelector('#response5').innerText = null;
+    resetBtn.setAttribute("class","hidden");
+  });
+
 });
