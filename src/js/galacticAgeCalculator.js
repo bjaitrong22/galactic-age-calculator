@@ -35,7 +35,12 @@ export default class galacticAgeCalculator {
   }
     
   getVenusLfeExpctncy() {   
-  
+    let venuLfeExpctncy = (this.avrgLfeExpctncy-this.age)/.62;
+
+    if (venuLfeExpctncy > 0) {
+      return "Your life expectancy on Venus is " + venuLfeExpctncy.toFixed(0) + " Venus years";
+    } 
   }
+
 }
 
