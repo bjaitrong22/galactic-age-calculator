@@ -20,6 +20,7 @@ export default class galacticAgeCalculator {
   }
 
   getJupiterAge() {
-    
+    let jupiAge = this.age /11.86;
+    return parseFloat(jupiAge.toFixed(2));
   }
 }
