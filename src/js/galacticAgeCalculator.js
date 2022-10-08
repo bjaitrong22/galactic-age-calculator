@@ -28,11 +28,14 @@ export default class galacticAgeCalculator {
   getMercuryLfeExpctncy() {
     let mercLfeExpctncy = (this.avrgLfeExpctncy-this.age)/.24;
 
-    if (mercLfeExpctncy > 0){
+    if (mercLfeExpctncy > 0) {
       return "Your life expectancy on Mercury is " + mercLfeExpctncy.toFixed(0) + " Mercury years";
     } 
-    
 
+  }
+    
+  getVenusLfeExpctncy() {   
+  
   }
 }
 
