@@ -50,5 +50,9 @@ export default class galacticAgeCalculator {
     }
   }
 
+  getJupiLfeExpctncy() {
+    
+  }
+
 }
 
