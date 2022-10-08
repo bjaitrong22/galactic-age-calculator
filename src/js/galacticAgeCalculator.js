@@ -39,7 +39,10 @@ export default class galacticAgeCalculator {
 
     if (venuLfeExpctncy > 0) {
       return "Your life expectancy on Venus is " + venuLfeExpctncy.toFixed(0) + " Venus years";
-    } 
+    }else {
+      let positiveVenuLfeExpctncy = -1 * (venuLfeExpctncy.toFixed(0));
+      return "You have lived " + positiveVenuLfeExpctncy + " Venus years beyond the average life expectancy." 
+    }
   }
 
   getMarsLfeExpctncy() {

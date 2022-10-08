@@ -58,4 +58,9 @@ describe("galacticAgeCalculator", () => {
     expect(galacticAge1.getMarsLfeExpctncy()).toEqual("You have lived " + 7 + " Mars years beyond the average life expectancy.");
   });
 
+  test("should correctly return the numbers of years they have lived passed the average life expectancy if they have already lived pass it, Venus years ", () => {
+    expect(galacticAge1.getVenusLfeExpctncy()).toEqual("You have lived " + 23 + " Venus years beyond the average life expectancy.");
+  });
+
+
 });
