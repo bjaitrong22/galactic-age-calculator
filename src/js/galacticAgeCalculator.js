@@ -3,4 +3,8 @@ export default class galacticAgeCalculator {
     this.age = age;
     this.sex = sex;
   } 
+
+  getMercuryAge() {
+    
+  }
 }
