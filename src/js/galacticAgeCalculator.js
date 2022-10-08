@@ -5,6 +5,7 @@ export default class galacticAgeCalculator {
   } 
 
   getMercuryAge() {
-    
+    let mercAge = this.age /.24;
+    return parseFloat(mercAge.toFixed(2));
   }
 }
