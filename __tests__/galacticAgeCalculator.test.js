@@ -30,7 +30,7 @@ describe("galacticAgeCalculator", () => {
   });
 
   test("should correctly return user's time left to live on Mercury", () => {
-    expect(galacticAge.getMercuryLfeExpctncy()).toEqual(150);
+    expect(galacticAge.getMercuryLfeExpctncy()).toEqual("Your life expectancy on Mercury is " + 150 + " Mercury years");
   });
 
 });
