@@ -47,6 +47,9 @@ export default class galacticAgeCalculator {
 
     if(marsLfeExpctncy > 0){
       return "Your life expectancy on Mars is " + marsLfeExpctncy.toFixed(0) + " Mars years";
+    }else {
+      let positiveMarsLfeExpctncy = -1 * (marsLfeExpctncy.toFixed(0));
+      return "You have lived " + positiveMarsLfeExpctncy + " Mars years beyond the average life expectancy."
     }
   }
 
