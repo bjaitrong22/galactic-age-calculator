@@ -15,6 +15,7 @@ export default class galacticAgeCalculator {
   }
 
   getMarsAge() {
-    
+    let marsAge = this.age /1.88;
+    return parseFloat(marsAge.toFixed(2));
   }
 }

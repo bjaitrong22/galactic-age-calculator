@@ -22,7 +22,7 @@ describe("galacticAgeCalculator", () => {
   });
 
   test("should correctly return user's age in Mars years", () => {
-    expect(galacticAge.getMarsAge()).toEqual(21.23);
+    expect(galacticAge.getMarsAge()).toEqual(21.28);
   });
 
 
