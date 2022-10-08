@@ -10,6 +10,7 @@ export default class galacticAgeCalculator {
   }
 
   getVenusAge() {
-    
+    let venuAge = this.age /.62;
+    return parseFloat(venuAge.toFixed(2));
   }
 }
