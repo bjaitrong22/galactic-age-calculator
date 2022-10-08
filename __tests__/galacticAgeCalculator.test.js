@@ -17,4 +17,9 @@ describe("galacticAgeCalculator", () => {
     expect(galacticAge.getMercuryAge()).toEqual(166.67);
     
   });
+
+  test("should correctly return user's age in Venus years", () => {
+    expect(galacticAge.getVenusAge()).toEqual(64.52);
+    
+  });
 });

@@ -8,4 +8,8 @@ export default class galacticAgeCalculator {
     let mercAge = this.age /.24;
     return parseFloat(mercAge.toFixed(2));
   }
+
+  getVenusAge() {
+    
+  }
 }
