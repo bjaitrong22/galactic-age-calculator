@@ -28,10 +28,10 @@ export default class galacticAgeCalculator {
     let mercLfeExpctncy = (this.avrgLfeExpctncy-this.age)/.24;
 
     if (mercLfeExpctncy > 0) {
-      return "Your life expectancy on Mercury is " + mercLfeExpctncy.toFixed(0) + " Mercury years";
+      return "Your life expectancy on Mercury is " + mercLfeExpctncy.toFixed(0) + " more Mercury years.";
     }else {
       let positiveMercLfeExpctncy = -1 * (mercLfeExpctncy.toFixed(0));
-      return "You have lived " + positiveMercLfeExpctncy + " Mercury years beyond the average life expectancy." 
+      return "You have lived " + positiveMercLfeExpctncy + " Mercury years beyond the average life expectancy." ;
     } 
 
   }
@@ -40,10 +40,10 @@ export default class galacticAgeCalculator {
     let venuLfeExpctncy = (this.avrgLfeExpctncy-this.age)/.62;
 
     if (venuLfeExpctncy > 0) {
-      return "Your life expectancy on Venus is " + venuLfeExpctncy.toFixed(0) + " Venus years";
+      return "Your life expectancy on Venus is " + venuLfeExpctncy.toFixed(0) + " more Venus years.";
     }else {
       let positiveVenuLfeExpctncy = -1 * (venuLfeExpctncy.toFixed(0));
-      return "You have lived " + positiveVenuLfeExpctncy + " Venus years beyond the average life expectancy." 
+      return "You have lived " + positiveVenuLfeExpctncy + " Venus years beyond the average life expectancy."; 
     }
   }
 
@@ -51,10 +51,10 @@ export default class galacticAgeCalculator {
     let marsLfeExpctncy = (this.avrgLfeExpctncy-this.age)/1.88;
 
     if(marsLfeExpctncy > 0){
-      return "Your life expectancy on Mars is " + marsLfeExpctncy.toFixed(0) + " Mars years";
+      return "Your life expectancy on Mars is " + marsLfeExpctncy.toFixed(0) + " more Mars years.";
     }else {
       let positiveMarsLfeExpctncy = -1 * (marsLfeExpctncy.toFixed(0));
-      return "You have lived " + positiveMarsLfeExpctncy + " Mars years beyond the average life expectancy."
+      return "You have lived " + positiveMarsLfeExpctncy + " Mars years beyond the average life expectancy.";
     }
   }
 
@@ -62,10 +62,10 @@ export default class galacticAgeCalculator {
     let jupiLfeExpctncy = (this.avrgLfeExpctncy-this.age)/11.86;
     
     if(jupiLfeExpctncy > 0){
-      return "Your life expectancy on Jupiter is " + jupiLfeExpctncy.toFixed(0) + " Jupiter years";
+      return "Your life expectancy on Jupiter is " + jupiLfeExpctncy.toFixed(0) + " more Jupiter years.";
     } else {
       let positiveJupiLfeExpctncy = -1 * (jupiLfeExpctncy.toFixed(0));
-      return "You have lived " + positiveJupiLfeExpctncy + " Jupiter years beyond the average life expectancy."
+      return "You have lived " + positiveJupiLfeExpctncy + " Jupiter years beyond the average life expectancy.";
     }
   }
 }
