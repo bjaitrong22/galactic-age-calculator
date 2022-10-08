@@ -7,12 +7,39 @@ function handlegalacticAgeCalcForm() {
   event.preventDefault();
   document.querySelector('#response').innerText = null;
   const age = parseInt(document.querySelector('#age').value);
-  const sex = document.querySelector("input[name='sex']:checked").value;
-  const galacticAgeCal = new galacticAgeCalculator(age,sex);
-  const response = galacticAgeCal.getAgeMercury();
+  const lifeExpectancy = document.querySelector('#lifeExpectancy').value;
+  const galacticAgeCal = new galacticAgeCalculator(age,lifeExpectancy);
+  const mercuryResponse = galacticAgeCal.getMercuryAge();
+  const venusResponse = galacticAgeCal.getVenusAge();
+  const marsResponse = galacticAgeCal.getMarsAge();
+  const jupiterResponse = galacticAgeCal.getJupiterAge();
+
+  const mercuryLfeExptncy = galacticAgeCal.getMercuryLfeExpctncy();
+  const venusLfeExptncy = galacticAgeCal.getVenusLfeExpctncy();
+  const marsyLfeExptncy = galacticAgeCal.getMarsLfeExpctncy();
+  const jupiterLfeExptncy = galacticAgeCal.getJupiterLfeExpctncy();
+
   const pTag = document.createElement("p");
-  pTag.append(response);
+  const pTag1 = document.createElement("p");
+  const pTag2 = document.createElement("p");
+  const pTag3 = document.createElement("p");
+  const pTag4 = document.createElement("p");
+
+  pTag.append("Your age is " + mercuryResponse + " in Mercury years, " + venusResponse +" Venus years, " + marsResponse + " Mars years, " + jupiterResponse + " Jupiter years.");
   document.querySelector('#response').append(pTag);
+
+  pTag1.append(mercuryLfeExptncy);
+  document.querySelector('#response2').append(pTag1);
+
+  pTag2.append(venusLfeExptncy);
+  document.querySelector('#response3').append(pTag2);
+
+  pTag3.append(marsyLfeExptncy);
+  document.querySelector('#response4').append(pTag3);
+
+  pTag4.append(jupiterLfeExptncy);
+  document.querySelector('#response5').append(pTag4);
+
 }
 
 window.addEventListener("load", function() {
