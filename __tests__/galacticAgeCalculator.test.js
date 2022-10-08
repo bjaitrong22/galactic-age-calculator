@@ -5,7 +5,7 @@ describe("galacticAgeCalculator", () => {
   let galacticAge;
 
   beforeEach(() => {
-    galacticAge = new galacticAgeCalculator(40,"Male");
+    galacticAge = new galacticAgeCalculator(40,"Male", 76);
   });
   
   test("should correctly create a galacticAgeCalculator object with user's sex and age", () => {
@@ -27,6 +27,10 @@ describe("galacticAgeCalculator", () => {
 
   test("should correctly return user's age in Jupiter years", () => {
     expect(galacticAge.getJupiterAge()).toEqual(3.37);
+  });
+
+  test("should correctly return user's time left to live on Mercury", () => {
+    expect(galacticAge.getMercuryLfeExpctncy()).toEqual(150);
   });
 
 });

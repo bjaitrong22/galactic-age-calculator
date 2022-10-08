@@ -1,7 +1,8 @@
 export default class galacticAgeCalculator {
-  constructor(age,sex) { 
+  constructor(age,sex,avrgLfeExpctncy) { 
     this.age = age;
     this.sex = sex;
+    this.avrgLfeExpctncy = avrgLfeExpctncy;
   } 
 
   getMercuryAge() {
@@ -23,4 +24,10 @@ export default class galacticAgeCalculator {
     let jupiAge = this.age /11.86;
     return parseFloat(jupiAge.toFixed(2));
   }
+
+  getMercuryLfeExpctncy() {
+    
+
+  }
 }
+
