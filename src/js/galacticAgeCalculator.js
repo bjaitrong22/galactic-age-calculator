@@ -58,7 +58,7 @@ export default class galacticAgeCalculator {
     }
   }
 
-  getJupiLfeExpctncy() {
+  getJupiterLfeExpctncy() {
     let jupiLfeExpctncy = (this.avrgLfeExpctncy-this.age)/11.86;
     
     if(jupiLfeExpctncy > 0){

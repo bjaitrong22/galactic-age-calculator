@@ -47,11 +47,11 @@ describe("galacticAgeCalculator", () => {
   });
 
   test("should correctly return user's time left to live on Jupiter", () => {
-    expect(galacticAge.getJupiLfeExpctncy()).toEqual("Your life expectancy on Jupiter is " + 3 + " more Jupiter years.");
+    expect(galacticAge.getJupiterLfeExpctncy()).toEqual("Your life expectancy on Jupiter is " + 3 + " more Jupiter years.");
   });
 
   test("should correctly return the number of years they have lived passed the average life expectancy if they have already lived pass it, Jupiter years", () => {
-    expect(galacticAge1.getJupiLfeExpctncy()).toEqual("You have lived " + 1 + " Jupiter years beyond the average life expectancy.");
+    expect(galacticAge1.getJupiterLfeExpctncy()).toEqual("You have lived " + 1 + " Jupiter years beyond the average life expectancy.");
   });
 
   test("should correctly return the numbers of years they have lived passed the average life expectancy if they have already lived pass it, Mars years ", () => {
