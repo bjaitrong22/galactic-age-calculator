@@ -37,4 +37,8 @@ describe("galacticAgeCalculator", () => {
     expect(galacticAge.getVenusLfeExpctncy()).toEqual("Your life expectancy on Venus is " + 58 + " Venus years");
   });
 
+  test("should correctly return user's time left to live on Mars", () => {
+    expect(galacticAge.getMarsLfeExpctncy()).toEqual("Your life expectancy on Mars is " + 19 + " Mars years");
+  });
+
 });

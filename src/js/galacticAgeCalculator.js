@@ -42,5 +42,9 @@ export default class galacticAgeCalculator {
     } 
   }
 
+  getMarsLfeExpctncy() {
+    
+  }
+
 }
 
