@@ -52,12 +52,13 @@ export default class galacticAgeCalculator {
 
   getJupiLfeExpctncy() {
     let jupiLfeExpctncy = (this.avrgLfeExpctncy-this.age)/11.86;
-
+    
     if(jupiLfeExpctncy > 0){
       return "Your life expectancy on Jupiter is " + jupiLfeExpctncy.toFixed(0) + " Jupiter years";
+    } else {
+      let positiveJupiLfeExpctncy = -1 * (jupiLfeExpctncy.toFixed(0));
+      return "You have lived " + positiveJupiLfeExpctncy + " Jupiter years beyond the average life expectancy."
     }
-
   }
-
 }
 

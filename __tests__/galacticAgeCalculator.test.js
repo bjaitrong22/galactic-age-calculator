@@ -3,9 +3,14 @@ import galacticAgeCalculator from '../src/js/galacticAgeCalculator.js';
 describe("galacticAgeCalculator", () => {
   
   let galacticAge;
+  let galacticAge1;
 
   beforeEach(() => {
     galacticAge = new galacticAgeCalculator(40,"Male", 76);
+  });
+
+  beforeEach(() => {
+    galacticAge1 = new galacticAgeCalculator(90,"Male", 76);
   });
   
   test("should correctly create a galacticAgeCalculator object with user's sex and age", () => {
@@ -43,6 +48,10 @@ describe("galacticAgeCalculator", () => {
 
   test("should correctly return user's time left to live on Jupiter", () => {
     expect(galacticAge.getJupiLfeExpctncy()).toEqual("Your life expectancy on Jupiter is " + 3 + " Jupiter years");
+  });
+
+  test("should correctly return the numbers years they have life past the average life expectancy if they have already lived pass it", () => {
+    expect(galacticAge1.getJupiLfeExpctncy()).toEqual("You have lived " + 1 + " Jupiter years beyond the average life expectancy.");
   });
 
 });
