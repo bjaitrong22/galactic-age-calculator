@@ -26,7 +26,9 @@ export default class galacticAgeCalculator {
   }
 
   getMercuryLfeExpctncy() {
-    
+    let mercLfeExpctncy = (this.avrgLfeExpctncy-this.age)/.24;
+
+    return mercLfeExpctncy;
 
   }
 }
