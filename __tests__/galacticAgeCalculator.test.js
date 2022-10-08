@@ -6,16 +6,16 @@ describe("galacticAgeCalculator", () => {
   let galacticAge1;
 
   beforeEach(() => {
-    galacticAge = new galacticAgeCalculator(40,"Male", 76);
+    galacticAge = new galacticAgeCalculator(40,76);
   });
 
   beforeEach(() => {
-    galacticAge1 = new galacticAgeCalculator(90,"Male", 76);
+    galacticAge1 = new galacticAgeCalculator(90,76);
   });
   
-  test("should correctly create a galacticAgeCalculator object with user's sex and age", () => {
+  test("should correctly create a galacticAgeCalculator object with user's age and average life expectancy", () => {
     expect(galacticAge.age).toEqual(40);
-    expect(galacticAge.sex).toEqual("Male");
+    expect(galacticAge.avrgLfeExpctncy).toEqual(76);
   });
 
   test("should correctly return user's age in Mercury years", () => {

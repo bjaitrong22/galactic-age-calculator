@@ -1,7 +1,6 @@
 export default class galacticAgeCalculator {
-  constructor(age,sex,avrgLfeExpctncy) { 
+  constructor(age,avrgLfeExpctncy) { 
     this.age = age;
-    this.sex = sex;
     this.avrgLfeExpctncy = avrgLfeExpctncy;
   } 
 
