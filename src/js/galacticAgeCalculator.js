@@ -30,6 +30,9 @@ export default class galacticAgeCalculator {
 
     if (mercLfeExpctncy > 0) {
       return "Your life expectancy on Mercury is " + mercLfeExpctncy.toFixed(0) + " Mercury years";
+    }else {
+      let positiveMercLfeExpctncy = -1 * (mercLfeExpctncy.toFixed(0));
+      return "You have lived " + positiveMercLfeExpctncy + " Mercury years beyond the average life expectancy." 
     } 
 
   }
