@@ -45,6 +45,6 @@ The application will also determine a user's life expectancy, and determine how 
   * Navigate to the top level of the directory. 
 
 ## Known Bugs
-  * Any known issues
+  * The life expectancy calculation is fixed to 0 decimal places. The application will return 0 years if the life expectancy for the respective planet is less than 1 year.
 # License
  * Portfolio is licensed under the terms of GNU AFFERO GENERAL PUBLIC LICENS Version 3, 19 November 2007 ( change if you are using a different license)
