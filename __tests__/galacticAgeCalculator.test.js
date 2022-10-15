@@ -1,16 +1,16 @@
-import galacticAgeCalculator from '../src/js/galacticAgeCalculator.js';
+import GalacticAgeCalculator from '../src/js/galacticAgeCalculator.js';
 
-describe("galacticAgeCalculator", () => {
+describe("GalacticAgeCalculator", () => {
   
   let galacticAge;
   let galacticAge1;
 
   beforeEach(() => {
-    galacticAge = new galacticAgeCalculator(40,76);
+    galacticAge = new GalacticAgeCalculator(40,76);
   });
 
   beforeEach(() => {
-    galacticAge1 = new galacticAgeCalculator(90,76);
+    galacticAge1 = new GalacticAgeCalculator(90,76);
   });
   
   test("should correctly create a galacticAgeCalculator object with user's age and average life expectancy", () => {

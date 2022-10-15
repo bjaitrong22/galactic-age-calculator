@@ -4,6 +4,10 @@ export default class GalacticAgeCalculator {
     this.avrgLfeExpctncy = avrgLfeExpctncy;
   } 
 
+  setAge(age) {
+
+  }
+
   getMercuryAge() {
     let mercAge = this.age /.24;
     return parseFloat(mercAge.toFixed(2));
