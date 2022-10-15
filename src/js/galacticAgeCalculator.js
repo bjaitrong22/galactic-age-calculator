@@ -1,4 +1,4 @@
-export default class galacticAgeCalculator {
+export default class GalacticAgeCalculator {
   constructor(age,avrgLfeExpctncy) { 
     this.age = age;
     this.avrgLfeExpctncy = avrgLfeExpctncy;
@@ -33,7 +33,6 @@ export default class galacticAgeCalculator {
       let positiveMercLfeExpctncy = -1 * (mercLfeExpctncy.toFixed(0));
       return "You have lived " + positiveMercLfeExpctncy + " Mercury years beyond the average life expectancy." ;
     } 
-
   }
     
   getVenusLfeExpctncy() {   

@@ -1,14 +1,14 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import galacticAgeCalculator from './js/galacticAgeCalculator.js';
+import GalacticAgeCalculator from './js/galacticAgeCalculator.js';
 
 function handlegalacticAgeCalcForm() {
   event.preventDefault();
   document.querySelector('#response').innerText = null;
   const age = parseInt(document.querySelector('#age').value);
   const lifeExpectancy = document.querySelector('#lifeExpectancy').value;
-  const galacticAgeCal = new galacticAgeCalculator(age,lifeExpectancy);
+  const galacticAgeCal = new GalacticAgeCalculator(age,lifeExpectancy);
   const mercuryResponse = galacticAgeCal.getMercuryAge();
   const venusResponse = galacticAgeCal.getVenusAge();
   const marsResponse = galacticAgeCal.getMarsAge();
