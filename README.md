@@ -40,11 +40,25 @@ A solar year, length of time it takes a planet to make one revolution around the
 The application will also determine a user's life expectancy, and determine how many years they have left to live or how many years they have lived past their life expectancy. Where year(s) is solar years for each planet.
 
 ## Setup/Installation Requirements
-  * Clone the repository to your desktop or a subdirectory in your desktop by typing **https://github.com/[github-userId/galactic-age-calculator.git**
-  * Be careful not to clone the repository inside a local repository. Otherwise, you will have a nested git respository.
-  * Navigate to the top level of the directory. 
+  1. Clone the repository to your desktop or a subdirectory in your desktop by typing **https://github.com/[github-userId/galactic-age-calculator.git**
+
+    * Be careful not to clone the repository inside a local repository. Otherwise, you will have a    nested git respository.
+
+  2. Navigate to the top level/root of the galactic-age-calculator directory using your command line. 
+  3. Open the project using your text editor of your choosing.
+  4. To start a development server and view the project in your browser:
+
+     * Navigate to the top level/root of the galactic-age-calculator directory using your command line.
+     * Run the command "npm install" to install the dependencies.
+     * Run the command "npm run build" to bundle the files.
+     * To start a development server, run the command "npm run start".
+
+  5. Run the tests by typing the command "npm run test" in the command line of the root directory of the galactic-age-calculator.
 
 ## Known Bugs
   * The life expectancy calculation is fixed to 0 decimal places. The application will return 0 years if the life expectancy for the respective planet is less than 1 year.
 # License
  * Portfolio is licensed under the terms of GNU AFFERO GENERAL PUBLIC LICENS Version 3, 19 November 2007 ( change if you are using a different license)
+
+
+ 
