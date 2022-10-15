@@ -4,7 +4,14 @@ export default class GalacticAgeCalculator {
     this.avrgLfeExpctncy = avrgLfeExpctncy;
   } 
 
-  setAge(age) {
+  setAge(newAge) {
+    this.age = newAge;
+    if(this.age === newAge) {
+      return true;
+    }else {
+      return false;
+    }
+    
 
   }
 
