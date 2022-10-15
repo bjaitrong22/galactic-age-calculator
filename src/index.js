@@ -8,37 +8,47 @@ function handlegalacticAgeCalcForm() {
   document.querySelector('#response').innerText = null;
   const age = parseInt(document.querySelector('#age').value);
   const lifeExpectancy = document.querySelector('#lifeExpectancy').value;
-  const galacticAgeCal = new GalacticAgeCalculator(age,lifeExpectancy);
-  const mercuryResponse = galacticAgeCal.getMercuryAge();
-  const venusResponse = galacticAgeCal.getVenusAge();
-  const marsResponse = galacticAgeCal.getMarsAge();
-  const jupiterResponse = galacticAgeCal.getJupiterAge();
 
-  const mercuryLfeExptncy = galacticAgeCal.getMercuryLfeExpctncy();
-  const venusLfeExptncy = galacticAgeCal.getVenusLfeExpctncy();
-  const marsyLfeExptncy = galacticAgeCal.getMarsLfeExpctncy();
-  const jupiterLfeExptncy = galacticAgeCal.getJupiterLfeExpctncy();
+  if( isNaN(age) || isNaN(lifeExpectancy) || age < 0 || lifeExpectancy < 0) {
+    const pTag = document.createElement("p");
 
-  const pTag = document.createElement("p");
-  const pTag1 = document.createElement("p");
-  const pTag2 = document.createElement("p");
-  const pTag3 = document.createElement("p");
-  const pTag4 = document.createElement("p");
+    pTag.append("You didn't enter a valid age and/or life expectacncy.");
+    document.querySelector('#response').append(pTag);
 
-  pTag.append("Your age is " + mercuryResponse + " in Mercury years, " + venusResponse +" Venus years, " + marsResponse + " Mars years, " + jupiterResponse + " Jupiter years.");
-  document.querySelector('#response').append(pTag);
+  } else {
+    const galacticAgeCal = new GalacticAgeCalculator(age,lifeExpectancy);
+    const mercuryResponse = galacticAgeCal.getMercuryAge();
+    const venusResponse = galacticAgeCal.getVenusAge();
+    const marsResponse = galacticAgeCal.getMarsAge();
+    const jupiterResponse = galacticAgeCal.getJupiterAge();
 
-  pTag1.append(mercuryLfeExptncy);
-  document.querySelector('#response2').append(pTag1);
+    const mercuryLfeExptncy = galacticAgeCal.getMercuryLfeExpctncy();
+    const venusLfeExptncy = galacticAgeCal.getVenusLfeExpctncy();
+    const marsyLfeExptncy = galacticAgeCal.getMarsLfeExpctncy();
+    const jupiterLfeExptncy = galacticAgeCal.getJupiterLfeExpctncy();
 
-  pTag2.append(venusLfeExptncy);
-  document.querySelector('#response3').append(pTag2);
+    const pTag = document.createElement("p");
+    const pTag1 = document.createElement("p");
+    const pTag2 = document.createElement("p");
+    const pTag3 = document.createElement("p");
+    const pTag4 = document.createElement("p");
 
-  pTag3.append(marsyLfeExptncy);
-  document.querySelector('#response4').append(pTag3);
+    pTag.append("Your age is " + mercuryResponse + " in Mercury years, " + venusResponse +" Venus years, " + marsResponse + " Mars years, " + jupiterResponse + " Jupiter years.");
+    document.querySelector('#response').append(pTag);
 
-  pTag4.append(jupiterLfeExptncy);
-  document.querySelector('#response5').append(pTag4);
+    pTag1.append(mercuryLfeExptncy);
+    document.querySelector('#response2').append(pTag1);
+
+    pTag2.append(venusLfeExptncy);
+    document.querySelector('#response3').append(pTag2);
+
+    pTag3.append(marsyLfeExptncy);
+    document.querySelector('#response4').append(pTag3);
+
+    pTag4.append(jupiterLfeExptncy);
+    document.querySelector('#response5').append(pTag4);
+
+  }
 
 }
 
