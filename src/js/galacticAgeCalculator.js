@@ -5,7 +5,6 @@ export default class GalacticAgeCalculator {
   } 
 
   setAge(newAge) {
-    
     if( newAge > 0 && !isNaN(newAge)) {
       this.age = newAge;
       return true;
@@ -15,7 +14,12 @@ export default class GalacticAgeCalculator {
   }
 
     setLifeExpctncy(newLifeExpctncy) {
-      
+      if(newLifeExpctncy > 0 && !isNaN(newLifeExpctncy)) {
+        this.avrgLfeExpctncy = newLifeExpctncy;
+        return true;
+      } else {
+        return false;
+      }
     }
     
   getMercuryAge() {
