@@ -66,8 +66,19 @@ describe("GalacticAgeCalculator", () => {
     expect(galacticAge1.getMercuryLfeExpctncy()).toEqual("You have lived " + 58 + " Mercury years beyond the average life expectancy.");
   });
 
-  test("galacticAge1.setAge(45) should return true if age has been updated", () => {
-    galacticAge1.setAge(45);
-    expect(galacticAge1.setAge(45)).toBeTruthy();
+  test("galacticAge1.setAge(45)should return true if age has been updated", () => {
+    galacticAge.setAge(45);
+    expect(galacticAge.setAge(45)).toBeTruthy();
   });
+
+  test("galacticAge1.setAge(-1)should return false if age has been updated", () => {
+    galacticAge1.setAge(-1);
+    expect(galacticAge1.setAge(-1)).toBeFalsy();
+  });
+
+  test("galacticAge1.setAge('a')should return false if age has not been updated", () => {
+    galacticAge1.setAge('a');
+    expect(galacticAge1.setAge('a')).toBeFalsy();
+  });
+
 });

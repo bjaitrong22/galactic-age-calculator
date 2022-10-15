@@ -5,8 +5,9 @@ export default class GalacticAgeCalculator {
   } 
 
   setAge(newAge) {
-    this.age = newAge;
-    if(this.age === newAge) {
+    
+    if( newAge > 0 && !isNaN(newAge)) {
+      this.age = newAge;
       return true;
     }else {
       return false;
