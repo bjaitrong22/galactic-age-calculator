@@ -5,3 +5,23 @@ body {
 .hidden {
   display: none;
 }
+
+#submitBtn {
+  background-color: black;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  transition: background-color .15s, color .15s, border-color .15s;
+}
+
+#submitBtn:hover {
+  background-color: rgb(96, 96, 241);
+  border-color: white;
+  color: yellow;
+}
