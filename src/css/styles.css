@@ -25,3 +25,32 @@ body {
   border-color: white;
   color: yellow;
 }
+
+#submitBtn:active {
+  opacity: .7;
+}
+
+#resetBtn {
+  background-color: rgb(221, 214, 214);
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  transition: background-color .15s, color .15s, border-color .15s;
+}
+
+#resetBtn:hover {
+  background-color: black;
+  border-color: red;
+  color: red;
+}
+
+#resetBtn:active {
+  opacity: .7;
+}
+

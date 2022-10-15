@@ -49,15 +49,15 @@ window.addEventListener("load", function() {
 
   document.querySelector("#galacticAgeCalculator-form").addEventListener("submit", handlegalacticAgeCalcForm);
 
-  submitBtn.removeAttribute("hidden");
+  submitBtn.removeAttribute("class");
   
   form.addEventListener("submit", function() {
-    submitBtn.setAttribute("hidden","hidden");
+    submitBtn.setAttribute("class","hidden");
     resetBtn.removeAttribute("class");
   });
 
   resetBtn.addEventListener("click", function() {
-    submitBtn.removeAttribute("hidden");
+    submitBtn.removeAttribute("class");
     document.querySelector('#response').innerText = null;
     document.querySelector('#response2').innerText = null;
     document.querySelector('#response3').innerText = null;
