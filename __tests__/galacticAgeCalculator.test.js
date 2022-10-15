@@ -80,5 +80,9 @@ describe("GalacticAgeCalculator", () => {
     galacticAge1.setAge('a');
     expect(galacticAge1.setAge('a')).toBeFalsy();
   });
-
+  
+  test("galacticAge1.setLifeExpctncy(100)should return true if life Expectancy has not been updated", () => {
+    galacticAge1.setLifeExpctncy(100);
+    expect(galacticAge1.setLifeExpctncy(100)).toBeTruthy();
+  });
 });

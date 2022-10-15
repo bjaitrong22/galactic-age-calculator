@@ -12,10 +12,12 @@ export default class GalacticAgeCalculator {
     }else {
       return false;
     }
-    
-
   }
 
+    setLifeExpctncy(newLifeExpctncy) {
+      
+    }
+    
   getMercuryAge() {
     let mercAge = this.age /.24;
     return parseFloat(mercAge.toFixed(2));
